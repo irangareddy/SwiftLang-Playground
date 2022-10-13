@@ -1,0 +1,13 @@
+---
+version: '3'
+
+silent: true
+
+tasks:
+  check:
+    cmds:
+      - swift {{.file}}
+    vars:
+      file:
+        sh: git ls-files --other --modified --exclude-standard
+    ignore_error: true
