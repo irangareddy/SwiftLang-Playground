@@ -1,17 +1,28 @@
 ---
 version: '3'
 
-silent: true
+silent: false
 
 tasks:
+
   default:
+    summary: |
+      Just a list of documented tasks.
+    silent: true
     cmds:
       - task --list-all
-    ignore_error: true
 
-  check:
+  lint:
     cmds:
       - swiftlint --fix {{.file}}
+    silent: true
+    vars:
+      file:
+        sh: git ls-files --other --modified --exclude-standard -- '*.swift'
+    ignore_error: true
+  
+  check:
+    cmds:
       - swift {{.file}}
     vars:
       file:
@@ -19,6 +30,8 @@ tasks:
     ignore_error: true
 
   changelog:
+    deps:
+      - lint
     cmds:
       - bash update_progress.sh
     ignore_error: true

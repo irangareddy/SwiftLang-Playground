@@ -4,7 +4,7 @@
 readme_path="./Progress.md"
 
 # Get the current changed Swift files
-changed_files=$(git diff --name-only -- '*.swift')
+changed_files=$(git diff --name-only -- '*.swift' | xargs -n1 basename | sed 's/\.swift$//')
 
 # Get the current date
 current_date=$(date +"%Y %b %e, %l:%M %p")
