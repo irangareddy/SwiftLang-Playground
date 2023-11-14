@@ -2,7 +2,6 @@
 
 // 1.Int - Signed Integers -- 2.UInt - UnSigned Integers
 
-
 // UInt Ranges
 
 let minIntValue = Int.min
@@ -43,8 +42,6 @@ let maxInt64Value = Int64.max
 print(minInt64Value)
 print(maxInt64Value)
 
-
-
 // UInt Ranges
 
 let minUIntValue = UInt.min
@@ -84,8 +81,3 @@ let maxUInt64Value = UInt64.max
 
 print(minUInt64Value)
 print(maxUInt64Value)
-
-
-
-
-

@@ -23,9 +23,7 @@ case .west:
     print("Where the skies are blue")
 }
 
-
 // Case 2
-
 
 enum Planet {
     case mercury, venus, earth, mars, jupiter, saturn, uranus, neptune
@@ -40,11 +38,10 @@ default:
 }
 // Prints "Mostly harmless"
 
-
 // Iterating over Enumeration Cases
 
 enum Tea: CaseIterable {
-    case iceTea,lemonTea,iraniTea,plainTea
+    case iceTea, lemonTea, iraniTea, plainTea
 }
 let numberOfChoices = Tea.allCases.count
 print("\(numberOfChoices) types of Tea available")
@@ -54,7 +51,7 @@ for tea in Tea.allCases {
     print(tea)
 }
 
-//Associated Values
+// Associated Values
 
 enum Barcode {
     case upc(Int, Int, Int, Int)
@@ -62,7 +59,6 @@ enum Barcode {
 }
 
 var productBarcode = Barcode.upc(8, 85909, 51226, 3)
-
 
 switch productBarcode {
 case .upc(let numberSystem, let manufacturer, let product, let check):
@@ -95,7 +91,7 @@ print(asciiTab)
 // Implicitly Assigned Raw Values
 
 enum Students: Int {
-    case Ranga = 1,Naveen,Chary,Sumanth,Praveen,Vineel,Raj
+    case Ranga = 1, Naveen, Chary, Sumanth, Praveen, Vineel, Raj
 }
 
 let sumanthRollNo = Students.Sumanth.rawValue
@@ -104,12 +100,11 @@ print(sumanthRollNo)
 // When strings are used for raw values, the implicit value for each case is the text of that case’s name.
 
 enum Names: String {
-    case Ranga,Naveen,Chary,Sumanth,Praveen,Vineel,Raj
+    case Ranga, Naveen, Chary, Sumanth, Praveen, Vineel, Raj
 }
 
 let vineelName = Names.Vineel.rawValue
 print(vineelName)
-
 
 // Initializing from a Raw Value
 
@@ -139,7 +134,6 @@ let first = ArithmeticExpression.number(9)
 let second = ArithmeticExpression.number(6)
 let sum = ArithmeticExpression.addition(first, second)
 let product = ArithmeticExpression.multiplication(sum, ArithmeticExpression.number(6))
-
 
 func evaluate(_ expression: ArithmeticExpression) -> Int {
     switch expression {

@@ -3,11 +3,9 @@
 let pi = 3.14159
 let  a = -89.89
 
-//Double represents a 64-bit floating-point number (15 decimal digits).
+// Double represents a 64-bit floating-point number (15 decimal digits).
 
-//Float represents a 32-bit floating-point number (6 decimal digits).
-
-
+// Float represents a 32-bit floating-point number (6 decimal digits).
 
 // Type Safety and Type Infernce
 
@@ -17,22 +15,21 @@ let anotherPi = 3 + pi
 
 print(type(of: anotherPi))
 
-
 // Numeric Literals
 
-//A decimal number, with no prefix
+// A decimal number, with no prefix
 
 let decimalInteger = 22
 
-//A binary number, with a 0b prefix
+// A binary number, with a 0b prefix
 
 let binaryInteger = 0b10110
 
-//An octal number, with a 0o prefix
+// An octal number, with a 0o prefix
 
 let octalInteger = 0o2356
 
-//A hexadecimal number, with a 0x prefix
+// A hexadecimal number, with a 0x prefix
 
 let hexadecimalInteger = 0x1AE
 

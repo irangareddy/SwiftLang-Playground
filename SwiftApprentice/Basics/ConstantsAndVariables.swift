@@ -6,11 +6,8 @@ var currentLoginAttempt = 0         // always changes
 // Declaring Multiple Variales in single line
 // Suggestion: For Clean Coding its not recommended
 
-
-let a = false,b = 6.67889,c = "Hai"
-var x = 1,y = true,z = 89.89
-
-
+let a = false, b = 6.67889, c = "Hai"
+var x = 1, y = true, z = 89.89
 
 // Type Annotations
 // Declaring : means "of-type"
@@ -18,16 +15,12 @@ var x = 1,y = true,z = 89.89
 var myName: String
 var myPin: Int
 
-
 myName = "Ranga Reddy"
 myPin = 7667
 
-
-
 // Declaring multiple values of same type
 
-var radius,size,length: Double
-
+var radius, size, length: Double
 
 // “Naming Constants and Variables”
 
@@ -40,7 +33,7 @@ let `let` = 1918
 // Updating the value
 
 let welcomeMessage = "Hello"
-//welcomeMessage = "Hey man!!!" ---> error since ,its declared "let"
+// welcomeMessage = "Hey man!!!" ---> error since ,its declared "let"
 
 var position = "jr iOS Dev"
 position = "Sr iOS Dev"
