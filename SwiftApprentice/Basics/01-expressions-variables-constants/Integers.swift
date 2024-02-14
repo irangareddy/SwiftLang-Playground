@@ -7,6 +7,7 @@
 let minIntValue = Int.min
 let maxIntValue = Int.max
 
+print("max valies")
 print(minIntValue)
 print(maxIntValue)
 

@@ -26,9 +26,13 @@ var radius, size, length: Double
 
 let  😄 = "smilely"
 
+print(😄)
+
 // Naming a variable or constant as same as reserved keyword
 
 let `let` = 1918
+
+print(`let`)
 
 // Updating the value
 
@@ -47,6 +51,13 @@ print(position)
 
 print("\(welcomeMessage), I am a \(position)")
 
+var salary = 0
+salary = 100_000
+
+print(salary)
+
+// Note: always variable names should be meaningful and appropriate
+
 // Comments : Oh C'mon still know we are using
 
 // Single line
@@ -56,3 +67,17 @@ print("\(welcomeMessage), I am a \(position)")
 // Semicolons
 
 let hai = "hai";print("\(hai) says hai")
+
+// Increment and Decrement
+
+var counter = 0
+// sub
+counter-=1
+// add
+counter+=4
+// multiplication
+counter*=4
+// division
+counter/=4
+print(counter) // 3
+
