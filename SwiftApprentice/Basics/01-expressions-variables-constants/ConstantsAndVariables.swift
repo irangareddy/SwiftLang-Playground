@@ -80,4 +80,3 @@ counter*=4
 // division
 counter/=4
 print(counter) // 3
-

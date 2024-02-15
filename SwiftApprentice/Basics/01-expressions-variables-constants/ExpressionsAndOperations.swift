@@ -13,8 +13,7 @@ import Foundation
 2*4
 24/3
 
-
-// MARK :- Shift Operations
+// MARK: - Shift Operations
 
 print(1 << 3) // 8
 print(32 >> 2) // 8
@@ -27,7 +26,7 @@ print(32 >> 2) // 8
 
 /// Understanding parentheses in swift
 
-print(350 / 5 + 2) 
+print(350 / 5 + 2)
 // defaults to print((350 / 5) + 2) -> 72 - because following BODMAS Rule. (operator precedence)
 print(350 / (5 + 2)) // 50
 
